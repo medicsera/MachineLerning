@@ -7,7 +7,7 @@ import numpy as np
 Затем загрузите его и выведите на экран.
 """
 
-def task_1():
+def point_1():
     arr = np.array([1,7,13,105])
 
     print(f"Массив: {arr}")
@@ -24,4 +24,17 @@ def task_1():
     print(f"Загруженный бинарный: {load_bin}")
 
 
-task_1()
+point_1()
+
+"""
+2. Три массива: из 10 нулей, 10 единиц, 10 пятерок.
+"""
+def point_2():
+    zeros = np.zeros(10)
+    ones = np.ones(10)
+    fives = np.full(10,5)
+    print(f"Нулевой: {zeros} \nЕдиничный: {ones} \nИз пятерок: {fives}")
+
+
+point_2()
+
