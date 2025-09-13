@@ -94,4 +94,26 @@ def num_4():
     plt.show()
 
 
-num_4()
+#num_4()
+
+def num_5():
+    x = ['Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++']
+    popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+
+    width = [0.1,0.2,0.5,1.1,0.2,0.3]
+    y_pos = [0,.8,1.5,3,5,6]
+
+    plt.bar(y_pos, popularity, width=width, color="blue")
+    plt.xlabel("Languages")
+    plt.ylabel("Popularity")
+    plt.title("PopularitY of Programming Language\n" + "Worldwide, Oct 2017 compared to a year ago")
+    plt.xticks(y_pos, x)
+
+    plt.minorticks_on()
+    plt.grid(which='major', linestyle='-', linewidth='0.5', color='red')
+    plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
+
+    plt.show()
+
+
+num_5()
