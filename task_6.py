@@ -17,4 +17,23 @@ def num_1():
     plt.show()
 
 
-num_1()
+#num_1()
+
+def num_2():
+    x = np.linspace(0, 100, 100)
+    y = 2 * x
+
+    fig, ax = plt.subplots(figsize=(7, 5))
+    ax.plot(x, y)
+    ax.set_xlabel("x")
+    ax.set_ylabel("y")
+
+    ax_inset = fig.add_axes([0.6, 0.5, 0.1, 0.15])  
+
+    ax_inset.plot(x, y)
+    ax_inset.set_xlabel("x")
+    ax_inset.set_ylabel("y")
+
+    plt.show()
+
+num_2()
