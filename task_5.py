@@ -154,4 +154,19 @@ def num_7():
     plt.show()
 
 
-num_7()
+#num_7()
+
+def num_8():
+    languages = 'Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++'
+    popuratity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+    colors = ["blue", "orange", "green", "red", "purple", "brown"]
+    explode = (0.1,0,0,0,0,0.1)
+
+    plt.pie(popuratity,explode=explode, labels=languages,colors=colors,autopct='%1.1f%%', shadow=True, startangle=140)
+    plt.axis('equal')
+    plt.title("PopularitY of Programming Language\n" + "Worldwide, Oct 2017 compared to a year ago", bbox={'facecolor':'0.8'})
+
+    plt.show()
+
+
+num_8()
