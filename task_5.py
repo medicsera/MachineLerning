@@ -116,4 +116,28 @@ def num_5():
     plt.show()
 
 
-num_5()
+#num_5()
+
+def num_6():
+    men = (22,30,33,30,26)
+    women = (25,32,30,35,29)
+    numbers = ('G1', 'G2', 'G3', 'G4', 'G5')
+    bar_width = 0.3
+
+    fig, ax = plt.subplots()
+    index = np.arange(5)
+
+    rect1 = plt.bar(index, men, bar_width, color="green", label="Men")
+    rect2 = plt.bar(index + bar_width, women, bar_width, color="red", label="Women")
+
+    plt.xlabel("Person")
+    plt.ylabel("Scores")
+    plt.title("Scores by person")
+    plt.xticks(index + bar_width, numbers)
+    plt.legend()
+
+    plt.tight_layout()
+    plt.show()
+
+
+num_6()
